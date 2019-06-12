@@ -1,0 +1,30 @@
+{
+    "colors": {
+        "RAYLEIGH": "lightblue",
+        "SS_RAYLEIGH": "lightblue",
+        "SEA_SALT": "blue",
+        "E_SEA_SALT": "blue",
+        "OMC": "green",
+        "E_OMC": "green",
+        "EC": "black",
+        "E_EC": "black",
+        "AMM_SO4": "yellow",
+        "E_AMM_SO4": "yellow",
+        "SO4": "yellow",
+        "E_SO4": "yellow",
+        "AMM_NO3": "red",
+        "E_AMM_NO3": "red",
+        "NO3": "red",
+        "E_NO3": "red",
+        "CRUSTAL": "purple",
+        "E_CRUSTAL": "purple",
+        "CM": "brown",
+        "E_CM": "brown",
+        "TBEXT": "grey"
+    },
+    "names": {
+        "obs": "Obs",
+        "cmaq": "CMAQ 2016ff",
+        "modf": "CAMx 2016ff"
+    }
+}

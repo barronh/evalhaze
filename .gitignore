@@ -1,0 +1,14 @@
+*.ncf
+*.png
+__pycache__
+log*
+obs/*
+extr/updated
+cache/updated
+derived/updated
+figs/ext/updated
+figs/comp/updated
+figs/spatial/updated
+tables/summary.csv
+pptx/RegionalHaze.pptx
+pptx/RegionalHazeMaps.pptx
