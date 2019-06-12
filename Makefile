@@ -3,6 +3,7 @@ export GDNAM=12US2
 export YYYY=2016
 export DAILYTMPL=dailyavg.LST.Y_24.2016ff_cb6r3_ae6nvpoa_16j.v521.12US2
 export SHORTNAME=CMAQ 2016ff
+export OBSPATH=obs/ClassIareas_NEWIMPROVEALG_2000to2017_2019_feb11_IMPAIRMENT.csv
 
 all: cache/updated extr/updated derived/updated \
      tables/summary.csv \
