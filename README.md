@@ -15,20 +15,19 @@ but also considering the importance in visibility.
 
 ## To Run
 
-To use the system with your own data, run these commands on a linux system in bash:
+To use the system with your own data, follow the steps below where evalmyhaze is a placeholder for a folder name you choose:
 
-1. `git clone /work/ROMO/regionalhaze/scratch/evalhaze evalmyhaze`
-2. `cp /work/ROMO/regionalhaze/scratch/evalhaze/obs/*.csv evalmyhaze`
-3. `cd evalmyhaze`
-4. Copy obs file to obs/
-5. Edit root Makefile (e.g., `vi Makefile`)
+1. `git clone https://github.com/barronh/evalhaze evalmyhaze`
+2. `cd evalmyhaze`
+3. Copy obs file to obs/
+4. Edit root Makefile (e.g., `vi Makefile`)
   a. `GDNAM` needs to be the grid your simulations is using (12US2, HEMIS, 12US1)
   b. `DAILYROOT` needs to be a folder with daily combine files stored as monthly files. 
   c. `DAILYTMPL` needs to be a file name root where the pattern `${DAILYTMPL}.??.ncf` matches files and `??` are months (01..12)
   d. `YYYY` needs to be the year (e.g., 2016) and the obs file only goes from 2005 to 2017.
   e. `SHORTNAME` needs to be the name of the simulation you want to see in figures.
   f. `OBSPATH` needs to be a path to observations as processed by EPA.
-6. Type `make`
+5. Type `make`
   a. First, the system will copy just the variables it needs to the cache folder (`cache/*.ncf`)
   b. Second, it will extract model data at the monitoring sites (`extr/*.ncf`) and pair with hygroscopicity data from the obs file.
   c. Third, it will derive the extinction variables (`derived/*.ncf`)
